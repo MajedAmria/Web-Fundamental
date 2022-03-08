@@ -1,0 +1,20 @@
+.box{
+    border: 1px solid black;
+    width: 300px;
+    height: 250px;
+    margin: 0 auto;
+}
+.box1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#btn{
+    background-color: #ffd966;
+    box-shadow: 2px 2px #000000;
+    width: 50px;
+    height: 20px;
+}
+#sp{
+    margin-left: 70px;
+}

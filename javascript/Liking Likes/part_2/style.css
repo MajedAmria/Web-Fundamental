@@ -1,0 +1,60 @@
+.header{
+    background-color: black;
+    width: 50%;
+   
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+.header h1{
+    margin-left:20px ;
+    color: white;
+}
+article h1{
+    text-align: center;
+}
+.left-side{
+   height: 250px;
+    
+    border: 1px solid black;
+    text-align: center;
+    flex: 1;
+}
+.left-side img{
+    width: 40%;
+    height: 40%;
+
+    
+}
+.right{
+   margin-left: 60px;
+    flex: 3;
+}
+.right-box{
+    border: 1px solid black;
+   
+    margin-left: 10px;
+   
+    
+}
+.inside-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.center{
+    width: 50%;
+display: flex;
+justify-content: space-between;
+
+margin: auto ;
+}
+
+.btn{
+    background-color: #ffd966;
+    box-shadow: 2px 2px #000000;
+    width: 50px;
+    height: 20px;
+}

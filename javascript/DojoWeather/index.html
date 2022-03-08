@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>DojoWeather</h1>
+        <ul>
+            <li><a href="#" onclick="show()">Burbank</a></li>
+            <li><a href="#" onclick="show()">Chicago</a></li>
+            <li><a href="#" onclick="show()">Dallas</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="headerofmain">
+            <h1>San Jose</h1>
+            <label>show tmperatuer in </label>
+            <select  id="select"  onchange="myFunction(this)">
+                <option >C</option>
+                <option >F</option>
+            </select>
+        </div>
+        <div class="main">
+          <div >  <p>Today</p><img src="some_rain.png" alt="some_rain"><p>some rain</p><p><span id="red">24</span> &nbsp;&nbsp;&nbsp;&nbsp;<span id="blue">18</span> </p></div>
+          <div > <p>Tomorrow</p><img src="some_sun.png" alt="some_sun"><p>some sun</p><p><span id="red">27</span>&nbsp;&nbsp;&nbsp;&nbsp; <span id="blue">19</span> </p></div>
+            <div > <p>Friday</p><img src="some_clouds.png" alt="some_clouds"><p>some clouds</p><p><span id="red">21</span> &nbsp;&nbsp;&nbsp;&nbsp; <span id="blue">16</span> </p></div>
+            <div > <p>Saturday</p><img src="some_sun.png" alt="some_sun"><p>some sun</p><p><span id="red">26</span> &nbsp;&nbsp;&nbsp;&nbsp; <span id="blue">21</span > </p></div>
+        </div>
+    </main>
+    <footer>
+        <div><img src="cookie.png" alt="cookie"></div>
+        <div>
+            <h1>Stop! Cookie time</h1>
+            <p>We use cookies (sadly not the edible ones) to personlaize
+                content and ads, to provide social media feature and to 
+                analyse our truffic. <a href="#">Read more...</a>
+            </p>
+        </div>
+        <div>
+            <button class="btn" onclick="ok()">I Accept</button>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
