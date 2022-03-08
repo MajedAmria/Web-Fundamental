@@ -8,53 +8,55 @@ element1.remove();
 }
 
 function ctof(temp) {
-    return Math.round(temp * 1.8 + 32);
+   
+    return  parseInt(Math.round(temp * 1.8 + 32)) ;
 }
 
 
 function ftoc(temp) {
-    return Math.round((temp - 32) / 1.8);
+    return parseInt(Math.round((temp - 32) / 1.8));
 }
 
-var temp1 = [document.querySelectorAll("#red")];
+/*var temp1 = [document.querySelectorAll("#red")];
 
 for(var i=0;i<temp1.length;i++){
    
     console.log(temp1[0][i].innerHTML);
     }
-
-var temp2 = [document.querySelectorAll("#blue")];
-for(var i=0;i<temp2.length;i++){
-console.log(temp2);
-}
+*/
 
 
 function myFunction(convert){
    
-    var temp1 = [document.querySelector("#red")];
-    var temp2 = [document.querySelector("#blue")];
+    var temp1 = document.querySelectorAll("#red");
+   
+    var temp2 = document.querySelectorAll("#blue");
+    
     if(convert.value == "C") {
-       temp1 [0][0].innerHTML = ftoc(temp1 [0][0].innerHTML);
-       temp2 [0][0].innerHTML= ftoc(temp2);
-       temp1 [0][1].innerHTML = ftoc(temp1);
-       temp2 [0][1].innerHTML= ftoc(temp2);
-       temp1 [0][2].innerHTML = ftoc(temp1);
-       temp2 [0][2].innerHTML= ftoc(temp2);
-       temp1 [0][3].innerHTML = ftoc(temp1);
-       temp2 [0][3].innerHTML= ftoc(temp2);
-        
+        temp1[0].innerHTML=ftoc(temp1[0].innerHTML);
+        temp2[0].innerHTML=ftoc(temp2[0].innerHTML);
+        temp1[1].innerHTML=ftoc(temp1[1].innerHTML);
+        temp2[1].innerHTML=ftoc(temp2[1].innerHTML);
+        temp1[2].innerHTML=ftoc(temp1[2].innerHTML);
+        temp2[2].innerHTML=ftoc(temp2[2].innerHTML);
+        temp1[3].innerHTML=ftoc(temp1[3].innerHTML);
+        temp2[3].innerHTML=ftoc(temp2[3].innerHTML);
+    
     } else {
    
-        temp1 [0][0].innerHTML = ctof(temp1[0][0].innerHTML);
-        temp1 [0][0].innerHTML = ctof(temp2);
-        temp1 [0][1].innerHTML = ctof(temp1);
-        temp1 [0][1].innerHTML = ctof(temp2);
-        temp1 [0][2].innerHTML= ctof(temp1);
-        temp1 [0][2].innerHTML = ctof(temp2);
-        temp1 [0][3].innerHTML= ctof(temp1);
-        temp1 [0][3].innerHTML = ctof(temp2);
-        
+        temp1[0].innerHTML= ctof(temp1[0].innerHTML);
+        temp2[0].innerHTML=ctof(temp2[0].innerHTML);
+        temp1[1].innerHTML=ctof(temp1[1].innerHTML);
+        temp2[1].innerHTML=ctof(temp2[1].innerHTML);
+        temp1[2].innerHTML=ctof(temp1[2].innerHTML);
+        temp2[2].innerHTML=ctof(temp2[2].innerHTML);
+        temp1[3].innerHTML=ctof(temp1[3].innerHTML);
+        temp2[3].innerHTML=ctof(temp2[3].innerHTML);
     }
    
  
 }
+
+
+var temps = document.querySelectorAll("main div span");
+console.log(temps);
