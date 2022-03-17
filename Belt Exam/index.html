@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="first_head">
+           <div class="inside">
+                <img src="heart-light.png" alt="heart-light" id="img">
+                <h1>Pet Shelter</h1>
+            </div>
+            
+                <ul class="nav-links">
+                    <li><a href="#">Find a Pit</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><button class="btn" onclick="remove(this)">Donate</button></li>
+                </ul>
+            
+            </div>
+            <div class="secound-head">
+                <label > I'm looking for a...</label>
+                <label class="label"> in or near..</label>
+            </div>
+           
+            <div class="therd-head">
+                
+                <div class="inside"> 
+                      <img src="paw-light.png" alt="paw-light"id="img2">
+                    <select  id="select"  onchange="myFunction(this)">
+                        <option >Any Pet</option>
+                        <option >Cat</option>
+                        <option >Dog</option>
+                    </select></div>
+                <div class="inside">
+                    <img src="pin-light.png" alt="pin-light" id="img2">
+                    <textarea id="textarea" placeholder="City or Zip code" ></textarea>
+                </div>
+                <div><button id="btn">Find My Best Friend</button>
+                </div>
+             
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="center">
+            <div><img src="pepper.jpg" alt="pepper"></div>
+            <div class="incenter">
+                <h2>Pepper</h2>
+                <p>pepper is slightly shy grey tabby, but she really loves showing her human offection</p>
+               
+            </div>
+            <div>
+                <p id="p1">3 pitting(s)</p>
+                <button class="button" onclick="like()">Pet Pepper</button>
+            </div>
+            </div><br>
+            <div class="center1">
+                <div><img src="bruce.jpg" alt="bruce"></div>
+                <div class="incenter">
+                    <h2>Bruce</h2>
+                   <p>bruce is a loyal compnation. he loves long walks and cold weather</p>
+                </div>
+                <div>
+                    <p id="p2">5 pitting(s)</p>
+                    <button class="button" onclick="like1()">Pet Bruce</button>
+                </div>
+            </div><br>
+            <div class="center">
+                <div><img src="oscar.jpg" alt="oscar"></div>
+                <div class="incenter">
+                    <h2>Oscar</h2>
+                    <p>oscar is bright, energetic, and friendly. He is looking for a good home </p>
+                </div>
+                <div>
+                    <p id="p3">8 pitting(s)</p>
+                    <button class="button" onclick="like2()">Pet Oscar</button>
+
+                </div>
+            </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

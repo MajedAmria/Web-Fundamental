@@ -1,0 +1,35 @@
+insert INTO dojos_and_ninjas.dojos(id,name,created_at,updated_at)
+value(1,'majed','2010-05-06','2008-07-02')
+value(2,'ahmed','2005-05-06','2018-07-02')
+value(3,'majed','2000-05-06','2019-07-02')
+--------------------------------------------------------
+delete  from dojos_and_ninjas.dojos where id=1 or id=2 or id=3
+--------------------------------------------------------
+insert INTO dojos_and_ninjas.dojos(id,name,created_at,updated_at)
+value(1,'majed','2010-05-06','2008-07-02')
+value(2,'ahmed','2005-05-06','2018-07-02')
+value(3,'majed','2000-05-06','2019-07-02')
+--------------------------------------------------------
+insert INTO dojos_and_ninjas.ninjas(first_name,last_name,age,created_at,updated_at,dojo_id)
+value ('mohammed','ali',20,'2000-05-04','2010-05-04',1)
+value ('ahmed','sameh',10,'2014-05-04','2020-05-04',1)
+value ('shadi','ali',60,'2010-05-04','2015-05-04',1)
+-----------------------------------------------------
+insert INTO dojos_and_ninjas.ninjas(first_name,last_name,age,created_at,updated_at,dojo_id)
+value ('maha','ali',20,'2000-05-04','2010-05-04',2)
+value ('ali','sameh',10,'2014-05-04','2020-05-04',2)
+value ('reem','ali',60,'2010-05-04','2015-05-04',2)
+----------------------------------------------------------
+insert INTO dojos_and_ninjas.ninjas(first_name,last_name,age,created_at,updated_at,dojo_id)
+value ('fadi','ali',20,'2000-05-04','2010-05-04',3)
+value ('yazan','ali',10,'2014-05-04','2020-05-04',3)
+value ('aseel','ali',60,'2010-05-04','2015-05-04',3)
+----------------------------------------------------------
+select * from dojos_and_ninjas.ninjas where dojo_id=1
+----------------------------------------------------------
+select * from dojos_and_ninjas.ninjas where dojo_id=3
+----------------------------------------------------------
+SELECT * FROM dojos_and_ninjas.dojos 
+JOIN dojos_and_ninjas.ninjas ON dojos.id = ninjas.dojo_id
+where ninjas.dojo_id=3;
+----------------------------------------------------------
